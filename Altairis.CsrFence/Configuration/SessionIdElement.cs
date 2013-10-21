@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Linq;
-using System.Text;
+﻿using System.Configuration;
 
 namespace Altairis.CsrFence.Configuration {
+
     public class SessionIdElement : ConfigurationElement {
 
         [ConfigurationProperty("length", IsRequired = false, DefaultValue = 64)]
@@ -19,6 +16,5 @@ namespace Altairis.CsrFence.Configuration {
             get { return (string)this["cookieName"]; }
             set { this["cookieName"] = value; }
         }
-
     }
 }

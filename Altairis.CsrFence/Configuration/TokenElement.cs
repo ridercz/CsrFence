@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Linq;
-using System.Text;
+﻿using System.Configuration;
 
 namespace Altairis.CsrFence.Configuration {
+
     public class TokenElement : ConfigurationElement {
 
         [ConfigurationProperty("fieldName", IsRequired = false, DefaultValue = "__CSRFTOKEN")]
@@ -12,6 +9,5 @@ namespace Altairis.CsrFence.Configuration {
             get { return (string)this["fieldName"]; }
             set { this["fieldName"] = value; }
         }
-
     }
 }
