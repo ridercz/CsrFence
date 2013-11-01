@@ -9,8 +9,6 @@ using System.Web.UI;
 namespace Altairis.CsrFence {
 
     public class ProtectionModule : IHttpModule {
-        private const string PROTECTION_PURPOSE = "Altairis.CsrFence.ProtectionModule.Token";
-
         private CsrFenceSection config;
 
         public void Dispose() {
@@ -47,7 +45,7 @@ namespace Altairis.CsrFence {
 
             // Create signed token
             var key = GetCsrfSessionIdFromCookie(true);
-            var token = MachineKey.Protect(key, PROTECTION_PURPOSE);
+            var token = MachineKey.Protect(key, config.Token.PurposeString);
             var tokenString = Convert.ToBase64String(token);
 
             // Add it to hidden form field
@@ -100,7 +98,7 @@ namespace Altairis.CsrFence {
             byte[] suppliedKey;
             try {
                 var token = Convert.FromBase64String(tokenString);
-                suppliedKey = MachineKey.Unprotect(token, PROTECTION_PURPOSE);
+                suppliedKey = MachineKey.Unprotect(token, config.Token.PurposeString);
             }
             catch (Exception) {
                 // Error while parsing or processing token

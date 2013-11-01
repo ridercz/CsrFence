@@ -9,5 +9,11 @@ namespace Altairis.CsrFence.Configuration {
             get { return (string)this["fieldName"]; }
             set { this["fieldName"] = value; }
         }
+
+        [ConfigurationProperty("purposeString", IsRequired = false, DefaultValue = "Altairis.CsrFence.ProtectionModule.Token")]
+        public string PurposeString {
+            get { return (string)this["purposeString"]; }
+            set { this["purposeString"] = value; }
+        }
     }
 }
