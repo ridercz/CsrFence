@@ -11,6 +11,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altairis.CsrFence", "Altairis.CsrFence\Altairis.CsrFence.csproj", "{F8E7F050-428C-44E2-A8DB-0251AA164C5E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DemoApp", "DemoApp", "{A12887EC-103E-4E63-B307-9ACDE042ECE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altairis.CsrFence.DemoTargetApp", "Altairis.CsrFence.DemoTargetApp\Altairis.CsrFence.DemoTargetApp.csproj", "{A209B4EE-ADE4-4B7C-82E1-5F78E153F510}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altairis.CsrFence.DemoAttackApp", "Altairis.CsrFence.DemoAttackApp\Altairis.CsrFence.DemoAttackApp.csproj", "{80D348A5-2C3D-4695-83C1-5A9784330E5E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,8 +27,20 @@ Global
 		{F8E7F050-428C-44E2-A8DB-0251AA164C5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8E7F050-428C-44E2-A8DB-0251AA164C5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8E7F050-428C-44E2-A8DB-0251AA164C5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A209B4EE-ADE4-4B7C-82E1-5F78E153F510}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A209B4EE-ADE4-4B7C-82E1-5F78E153F510}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A209B4EE-ADE4-4B7C-82E1-5F78E153F510}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A209B4EE-ADE4-4B7C-82E1-5F78E153F510}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80D348A5-2C3D-4695-83C1-5A9784330E5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80D348A5-2C3D-4695-83C1-5A9784330E5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80D348A5-2C3D-4695-83C1-5A9784330E5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80D348A5-2C3D-4695-83C1-5A9784330E5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A209B4EE-ADE4-4B7C-82E1-5F78E153F510} = {A12887EC-103E-4E63-B307-9ACDE042ECE1}
+		{80D348A5-2C3D-4695-83C1-5A9784330E5E} = {A12887EC-103E-4E63-B307-9ACDE042ECE1}
 	EndGlobalSection
 EndGlobal

