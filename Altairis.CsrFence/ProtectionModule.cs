@@ -29,8 +29,13 @@ namespace Altairis.CsrFence {
             var page = app.Context.Handler as Page;
 
             if (page == null) return; // Handler is not Web Form
+            page.Init += page_Init;
+        }
 
-            if (!app.Context.Request.HttpMethod.Equals("POST", StringComparison.OrdinalIgnoreCase)) {
+        void page_Init(object sender, EventArgs e) {
+            var page = sender as Page;
+
+            if (!page.IsPostBack) {
                 // First request - create CSRF token
                 CreateCsrfToken(page);
             }
