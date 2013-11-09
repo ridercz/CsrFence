@@ -1,8 +1,8 @@
 # CsrFence
 
-CSRFence is simple library for ASP.NET WebForms, offering protection from CSRF (_Cross-Site Request Forgery_) attacks. ASP.NET Web Forms are in newer version protected by default, but the protection requires WiewState to be enabled.
+**CSRFence is simple library for ASP.NET WebForms, offering protection from CSRF (_Cross-Site Request Forgery_) attacks. ASP.NET Web Forms are in newer versions protected by default, but the protection requires WiewState to be enabled.**
 
-There are some other solutions, but they're usually unnecesarilly complex to install and configure or are dependent on ViewState or SessionState to store values or generate session identifiers.
+**There are some other solutions, but they're usually unnecesarilly complex to install and configure or are dependent on ViewState or SessionState to store values or generate session identifiers.**
 
 ## How to install
 
@@ -19,11 +19,11 @@ In most cases, no configuration is necessary. CSRFence uses sensible defaults th
 ```xml
 <configuration>
 	<configSections>
-		<section name="altairis.csrFence" type="Altairis.CsrFence.Configuration.CsrFenceSection "/>
+		<section name="altairis.csrFence" type="Altairis.CsrFence.Configuration.CsrFenceSection"/>
 	</configSections>
 	<altairis.csrFence>
 		<sessionId length="64" cookieName=".CSRFENCE" />
-		<token fieldName="__CSRFTOKEN" purposeString="Altairis.CsrFence.ProtectionModule.Token" />
+		<token fieldName="__CSRFTOKEN" purposeString="Altairis.CsrFence.ProtectionModule.Token"/>
 	</altairis.csrFence>
 </configuration>
 ```
@@ -48,10 +48,10 @@ Each subsequent POST request contains hidden field, whose value is cryptographic
 
 ## Contact author
 
-* Web site: http://www.rider.cz/
-* Blog (in Czech): http://www.aspnet.cz/
-* Facebook: rider.cz
-* Twitter: @ridercz
+* Web site: [www.rider.cz](http://www.rider.cz/)
+* Technical blog (in Czech): [ASPNET.cz](http://www.aspnet.cz/)
+* Facebook: [rider.cz](https://facebook.com/rider.cz)
+* Twitter: [@ridercz](https://twitter.com/ridercz)
 * E-mail: michal.valasek (at) altairis.cz
 
 ## Licensing
