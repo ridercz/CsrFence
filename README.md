@@ -19,7 +19,7 @@ In most cases, no configuration is necessary. CSRFence uses sensible defaults th
 ```xml
 <configuration>
 	<configSections>
-		<section name="altairis.csrFence" type="Altairis.CsrFence.Configuration.CsrFenceSection"/>
+		<section name="altairis.csrFence" type="Altairis.CsrFence.Configuration.CsrFenceSection, Altairis.CsrFence"/>
 	</configSections>
 	<altairis.csrFence>
 		<sessionId length="64" cookieName=".CSRFENCE" />
