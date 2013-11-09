@@ -54,17 +54,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Altairis.CsrFence.nuspec" />
-    <None Include="Web.config.uninstall.xdt">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Web.config.install.xdt">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="Web.config.transform" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties IncrementOnRebuild="True" IncrementOnBuild="True" IncrementAction="3" Versioning="1" StartAt="21. 10. 2013 0:00:00" />
+      <UserProperties StartAt="21. 10. 2013 0:00:00" Versioning="1" IncrementAction="3" IncrementOnBuild="True" IncrementOnRebuild="True" />
     </VisualStudio>
   </ProjectExtensions>
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" />
