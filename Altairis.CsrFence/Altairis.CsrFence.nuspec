@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>Altairis CSRFence</title>
+    <authors>Michal Altair Valášek - Altairis</authors>
+    <description>Simple drop-in CSRF (cross-site request forgery) protection module for ASP.NET Web Forms.</description>
+    <projectUrl>https://github.com/ridercz/CsrFence</projectUrl>
+    <licenseUrl>https://raw.github.com/ridercz/CsrFence/master/LICENSE</licenseUrl>
+    <iconUrl>http://www.cdn.altairis.cz/NuGet/icon-150x150.png</iconUrl>
+  </metadata>
+</package>
