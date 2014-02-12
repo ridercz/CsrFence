@@ -35,14 +35,11 @@ namespace Altairis.CsrFence {
         void page_Init(object sender, EventArgs e) {
             var page = sender as Page;
 
-            if (!page.IsPostBack) {
-                // First request - create CSRF token
-                CreateCsrfToken(page);
-            }
-            else {
-                // Postback - verify CSRF token
-                if (!VerifyCsrfToken(page)) throw new HttpRequestValidationException("CSRF protection token is missing or invalid.");
-            }
+            // Verify CSRF token on postback
+            if (page.IsPostBack && !VerifyCsrfToken(page)) throw new HttpRequestValidationException("CSRF protection token is missing or invalid.");
+
+            // Create CSRF token
+            CreateCsrfToken(page);
         }
 
         private void CreateCsrfToken(Page page) {
